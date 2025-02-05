@@ -1,0 +1,53 @@
+@use "../../base/abstracts" as *;
+
+.about {
+  @include flex();
+
+  > * {
+    flex-basis: 50%;
+  }
+
+  .left {
+    h2 {
+      width: 80%;
+    }
+    p {
+      margin-top: 2rem;
+      width: 70%;
+    }
+  }
+
+  .right {
+    > *:not(:nth-child(1)) {
+      margin-top: 4rem;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: 7rem auto;
+      grid-template-rows: 4rem auto;
+
+      column-gap: 2.6rem;
+
+      .before {
+        @extend %flex;
+        height: 4rem;
+        width: 7rem;
+        border-radius: 2rem;
+        background-color: var(--bright-red);
+
+        p {
+          color: var(--very-light-gray);
+        }
+      }
+      h3 {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      & > p {
+        grid-column-start: 2;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

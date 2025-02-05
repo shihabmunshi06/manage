@@ -1,0 +1,18 @@
+@use "../../base/abstracts" as *;
+
+.cta {
+  @include flex($juco: space-between, $alite: center);
+  background-color: var(--bright-red);
+  height: 30vh;
+  h2 {
+    color: var(--very-light-gray);
+  }
+  a.button {
+    background-color: var(--very-light-gray);
+    color: var(--bright-red);
+    &:hover{
+      background-color: var(--very-light-gray);
+      color: var(--hover-bg);
+    }
+  }
+}

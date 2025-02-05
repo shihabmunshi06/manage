@@ -1,0 +1,14 @@
+@use "./base/zindex" as baseIndex;
+
+@use "./layout/1-Top/zindex" as topIndex;
+@use "./layout/2-Homepage/zindex" as homepageIndex;
+@use "./layout/3-About/zindex" as aboutIndex;
+@use "./layout/4-Testimony/zindex" as testimonyIndex;
+@use "./layout/5-Cta/zindex" as ctaIndex;
+@use "./layout/6-Footer/zindex" as footerIndex;
+
+@use "./components/zindex" as componentIndex;
+
+@use "./animation/animation.scss" as animationIndex;
+
+@use "./media/media.scss" as medaiaIndex;

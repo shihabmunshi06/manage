@@ -1,0 +1,20 @@
+@use "../../base/abstracts" as *;
+
+.homepage {
+  @include flex();
+  gap: 5vw;
+  .left {
+    width: 34vw;
+    h1 {
+      margin-bottom: 3rem;
+    }
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+  .img-div {
+    @extend %flex;
+    width: 50vw;
+    max-height: calc(100vh - 13rem);
+  }
+}
