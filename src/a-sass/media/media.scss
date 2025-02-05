@@ -55,13 +55,20 @@
   }
 
   .main {
+    > * {
+      max-height: fit-content;
+  
+      &:not(:last-child) {
+        height: fit-content;
+      }
+    }
     .homepage {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
 
       .left {
-        height: 50%;
+        height: calc(50vh - 13.2rem);
         width: 100%;
         max-width: 40rem;
         order: 2;
@@ -79,7 +86,7 @@
         }
       }
       .img-div {
-        height: 50%;
+        height: 50vh;
         width: 100%;
         max-width: 40rem;
         order: 1;
@@ -133,6 +140,8 @@
     }
 
     .cta {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       flex-direction: column;
       gap: 4rem;
       @include flex($juco: center, $alite: center);
@@ -142,15 +151,14 @@
     }
 
     footer {
-      padding-bottom: 6rem;
-      .copyright {
-        right: 0;
-        transform: translateX(-50%);
-        bottom: 2rem;
-      }
-
       height: auto !important;
       flex-direction: column;
+      padding-bottom: 6rem;
+      .copyright {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 2rem;
+      }
       form {
         order: 1;
       }

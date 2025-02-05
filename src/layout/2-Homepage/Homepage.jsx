@@ -12,9 +12,6 @@ export default function Homepage() {
         gsap.to(".img-div", { x: "0%", duration: 1 });
     })
 
-
-
-
     return (
         <div className="homepage">
             <div className="left">
