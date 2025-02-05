@@ -12,7 +12,7 @@
 .main {
   max-width: 144rem;
   > * {
-    @extend %border;
+    // @extend %border;
     max-height: 100vh;
     overflow-y: hidden;
 
@@ -21,12 +21,15 @@
     }
   }
   .homepage {
+    background-color: var(--very-light-gray);
     padding: 11.6rem 4.8vw 2rem;
   }
   .about {
+    background-color: var(--very-light-gray);
     padding: 11.6rem 4.8vw 2rem;
   }
   .testimony {
+    background-color: var(--very-light-gray);
     padding: 11.6rem 4.8vw 2rem;
   }
   .cta {
