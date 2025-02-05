@@ -12,6 +12,7 @@
 .main {
   max-width: 144rem;
   > * {
+    @extend %border;
     max-height: 100vh;
     overflow-y: hidden;
 
