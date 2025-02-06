@@ -14,8 +14,7 @@
     height: 7.6rem;
     @include flex($juco: space-between, $alite: center);
 
-
-    background-color: var(--very-light-gray);
+    background-color: white;
 
     .img-div {
       width: clamp(10rem, 11vw, 16rem);

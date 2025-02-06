@@ -21,18 +21,33 @@
     }
   }
   .homepage {
-    background-color: var(--very-light-gray);
+    background-image: url("/svg/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 98vh auto;
+    background-position-x: 110%;
+    background-position-y: -10%;
+
     padding: 11.6rem 4.8vw 2rem;
   }
   .about {
-    background-color: var(--very-light-gray);
+    background-image: url("/svg/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 98vh auto;
+    background-position-x: -30%;
+    background-position-y: 0%;
+    
     padding: 11.6rem 4.8vw 2rem;
   }
   .testimony {
-    background-color: var(--very-light-gray);
     padding: 11.6rem 4.8vw 2rem;
   }
   .cta {
+    background-image: url("/svg/bg-cta-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 98vh auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+
     height: 40vh;
     padding: 0 4.8vw;
   }
@@ -40,4 +55,9 @@
     height: 30vh;
     padding: 4rem 4.8vw;
   }
+}
+
+.test {
+  background-color: coral;
+  @extend %border;
 }

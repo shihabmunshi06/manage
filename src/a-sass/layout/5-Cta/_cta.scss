@@ -1,6 +1,7 @@
 @use "../../base/abstracts" as *;
 
 .cta {
+  
   @include flex($juco: space-between, $alite: center);
   background-color: var(--bright-red);
   height: 30vh;
