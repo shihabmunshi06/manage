@@ -15,6 +15,7 @@
     // @extend %border;
     max-height: 100vh;
     overflow-y: hidden;
+    scroll-snap-align: start;
 
     &:not(:last-child) {
       height: 100vh;
@@ -35,7 +36,7 @@
     background-size: 98vh auto;
     background-position-x: -30%;
     background-position-y: 0%;
-    
+
     padding: 11.6rem 4.8vw 2rem;
   }
   .testimony {

@@ -27,6 +27,9 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   -ms-overflow-style: none;
+
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 7rem;
 }
 body {
   font-family: "Be Vietnam Pro", serif;
