@@ -21,11 +21,6 @@ export default function Testimony() {
             <h2>What they have said</h2>
 
             <div className="caraousel">
-                <div className="button-wrapper">
-                    <button disabled={imageIndex === 0} onClick={handlePrev} className="prev">prev</button>
-                    <button disabled={imageIndex === testimonyData.length - 1} onClick={handleNext} className="next">next</button>
-                </div>
-
                 <div className="cards">
                     <Card
                         imageIndex={imageIndex}
@@ -45,6 +40,10 @@ export default function Testimony() {
                         imageIndex={imageIndex}
                         {...testimonyData[0]}
                     />
+                </div>
+                <div className="button-wrapper">
+                    <button disabled={imageIndex === 0} onClick={handlePrev} className="prev">prev</button>
+                    <button disabled={imageIndex === testimonyData.length - 1} onClick={handleNext} className="next">next</button>
                 </div>
             </div>
             <div className="cta-wrapper">
